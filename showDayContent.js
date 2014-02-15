@@ -8,7 +8,7 @@ var button_kissDay = document.getElementById("kiss-day");
 var button_valentineDay = document.getElementById("valentine-day");
 
 var mainMenu = document.getElementById("main-menu");
-
+var currentActiveDayContent = null;
 var requestBaseURL = "http://www.google.com/";
 
 button_roseDay.addEventListener("click", function() {
@@ -43,6 +43,11 @@ button_valentineDay.addEventListener("click", function() {
     showDayContent("valentine-day");
 }, false);
 
+var buttonArray_backToMainMenu = document.getElementsByClassName("back-main-menu");
+for(i = 0; i < buttonArray_backToMainMenu.length; i++) {
+    buttonArray_backToMainMenu[i].addEventListener("click", hideDayContent, false);
+}
+
 function showAJAXLoader() {
 	// Show AJAX Loader
 	document.getElementById("notification-overlay").style.display = "block";
@@ -56,6 +61,8 @@ function hideAJAXLoader() {
 }
 
 function getAdvice(dayID) {
+	// Show AJAX Loader Notification
+	showAJAXLoader();
 	
 	var xmlHTTPRequest = new XMLHttpRequest({
 		mozSystem: true
@@ -83,9 +90,20 @@ function showDayContent(dayID) {
 	mainMenu.style.display = "none";
 	document.getElementById(dayID + "-content").style.display = "block";
 	
+	// Set Active Day Content ID
+	currentActiveDayContent = dayID;
+	
 	// Start Retreival of Advise and Set onreadystatechange attribute
 	getAdvice(dayID);
-	
-	// Show AJAX Loader
-	showAJAXLoader();
+}
+
+function hideDayContent() {
+    // Remove Advice from Day Content
+    document.getElementById(currentActiveDayContent + "-content-advice").innerHTML = "";
+    
+    // Hide Day Content
+    document.getElementById(currentActiveDayContent + "-content").style.display = "none";
+    
+    // Show Main Menu
+    mainMenu.style.display = "block";
 }
