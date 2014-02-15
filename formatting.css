@@ -1,0 +1,17 @@
+a
+{
+    text-decoration: none;
+}
+
+#notification-overlay
+{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.3;
+    background-color: #2E2E2E;
+    display: none;
+}
+
