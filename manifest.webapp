@@ -1,0 +1,20 @@
+{
+	"name": "Arista",
+	"description": "A Valentine's Week Advice App",
+	"launch_path": "/index.html",
+	
+	"type": "privileged",
+	"permissions": {
+		"systemXHR": {
+			"description": "Required for AJAX calls in the App"
+		}
+	},
+	
+	"icons": {
+		"128": "/img/logo128.png"
+	},
+	
+	"developer": {
+		"name": "Nilay Binjola"
+	}
+}
