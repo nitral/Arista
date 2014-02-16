@@ -10,6 +10,9 @@
     
     <div id="notification-overlay">
         <section id = "ajax-loader">Loading <img src = "./images/ajaxload.gif" /></section>
+	<section id="submit-story-progress-message">Submitting your story... With Love.</section>
+	<section id="success"><img src="./images/success.png" /></section>
+	<section id="submit-story-success-message">Your story was submitted successfully! <button id="back-sbumit-story">Back</button></section>
     </div>
     
     <header id="banner">
@@ -30,7 +33,7 @@
 		<button id="kiss-day">Kiss Day</button>
 		<button id="valentine-day">Valentine's Day</button>
 		<br />
-		<button id="submit-story">Submit Your Story</button>
+		<button id="submit-story-trigger">Submit Your Story</button>
 	</section>
 	<section id="rose-day-content" class="day-content">
 		<h2>Rose Day</h2>
@@ -72,6 +75,29 @@
 		<button class = "back-main-menu">Back to Main Menu</button>
                 <section id="valentine-day-content-advice">Advice</section>
 	</section>
+	<section id="submit-story">
+		<h2>Submit your own Story</h2>
+		<button id = "submitStory-to-mainMenu">Back to Main Menu</button>
+                <section id="submit-story form">
+		    <form name= "submit-story-form" id="submit-story-form" action= "http://www.example.com/example.php" method= "get">
+			<input type="text" name="name" id="submit-story-name" placeholder="Your Name/Alias" required />
+			<br />
+			<select id="submit-story-category" name="category">
+			    <option value="1">Rose Day</option>
+			    <option value="2">Propose Day</option>
+			    <option value="3">Chocolate Day</option>
+			    <option value="4">Teddy Day</option>
+			    <option value="5">Promise Day</option>
+			    <option value="6">Hug Day</option>
+			    <option value="7">Kiss Day</option>
+			    <option value="8">Valentine's Day</option>
+			    <option value="9">Other</option>
+			</select>
+			<textarea name="story" id="submit-story-story" rows="5" maxlength="300" placeholder="Share your Story here!" wrap="soft" required></textarea>
+			<button id="submit-story-submit">Submit</button>
+		    </form>
+		</section>
+	</section>
     </div>
     
     <footer>
@@ -83,5 +109,6 @@
     </footer>
     
     <script src="./showDayContent.js"></script>
+    <script src="./submitStory.js"></script>
 </body>
 </html>
