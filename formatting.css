@@ -10,9 +10,43 @@ a
     top: 0px;
     left: 0px;
     right: 0px;
-    opacity: 0.3;
-    background-color: #2E2E2E;
+    opacity: 0.85;
+    background-color: #000000;
     display: none;
+}
+
+#notification
+{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
+
+#ajax-loader
+{
+    display: none;
+    margin-top: 50%;
+}
+
+#submit-story-progress-message
+{
+    display: none;
+    color: #FFFFFF;
+}
+
+#success
+{
+    display: none;
+    margin-top: 40%;
+}
+
+#submit-story-success-message
+{
+    display: none;
+    color: #FFFFFF;
 }
 
 .day-content
@@ -24,4 +58,3 @@ a
 {
     display:none;
 }
-

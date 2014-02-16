@@ -51,12 +51,14 @@ for(i = 0; i < buttonArray_backToMainMenu.length; i++) {
 function showAJAXLoader() {
 	// Show AJAX Loader
 	document.getElementById("notification-overlay").style.display = "block";
+	document.getElementById("notification").style.display = "block";
 	document.getElementById("ajax-loader").style.display = "block";
 }
 
 function hideAJAXLoader() {
         // Hide AJAX Loader
 	document.getElementById("notification-overlay").style.display = "none";
+	document.getElementById("notification").style.display = "none";
         document.getElementById("ajax-loader").style.display = "none";
 }
 
