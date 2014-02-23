@@ -9,109 +9,147 @@
 
 <body>
     
-    <div id="notification-overlay"></div>
-    
-    <div id="notification">
-	<center>
-	    <section id = "ajax-loader"><img src = "./images/ajaxload.gif" /></section>
-	    <section id="submit-story-progress-message"><strong>Submitting your story... With Love.</strong></section>
-	    <section id="success"><img src="./images/success.png" /></section>
-	    <section id="submit-story-success-message"><strong>our story was submitted successfully!</strong> <button id="back-sbumit-story">Back</button></section>
-	</center>
-    </div>
-    
-    <header id="banner">
-        <h1>Arista</h1>
+    <header id="header">
+	<div id="prev-page">
+	    <img src="./images/previous.png" id="prev-page-button" />
+	</div>
+	<div id="cover-page-heading" class="page-heading">
+	</div>
+	<div id="rose-day-page-heading" class="page-heading">
+	    Rose Day
+	</div>
+	<div id="propose-day-page-heading" class="page-heading">
+	    Propose Day
+	</div>
+	<div id="chocolate-day-page-heading" class="page-heading">
+	    Chocolate Day
+	</div>
+	<div id="teddy-day-page-heading" class="page-heading">
+	    Teddy Day
+	</div>
+	<div id="promise-day-page-heading" class="page-heading">
+	    Promise Day
+	</div>
+	<div id="hug-day-page-heading" class="page-heading">
+	    Hug Day
+	</div>
+	<div id="kiss-day-page-heading" class="page-heading">
+	    Kiss Day
+	</div>
+	<div id="valentine-day-page-heading" class="page-heading">
+	    Valentine's Day
+	</div>
+	<div id="next-page">
+	    <img src="./images/next.png" id="next-page-button"/>
+	</div>
     </header>
     
+    <div class="clear-div"></div>
+
+    <hr />
+
     <div id="main-body">
-	<section id="main-menu">
-		<button id="rose-day">Rose Day</button>
-		<button id="propose-day">Propose Day</button>
-		<br />
-		<button id="chocolate-day">Chocolate Day</button>
-		<button id="teddy-day">Teddy Day</button>
-		<br />
-		<button id="promise-day">Promise Day</button>
-		<button id="hug-day">Hug Day</button>
-		<br />
-		<button id="kiss-day">Kiss Day</button>
-		<button id="valentine-day">Valentine's Day</button>
-		<br />
-		<button id="submit-story-trigger">Submit Your Story</button>
-	</section>
-	<section id="rose-day-content" class="day-content">
-		<h2>Rose Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="rose-day-content-advice">Advice</section>
-        </section>
-	<section id="propose-day-content" class="day-content">
-		<h2>Propose Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="propose-day-content-advice">Advice</section>
-	</section>
-	<section id="chocolate-day-content" class="day-content">
-		<h2>Chocs Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="chocolate-day-content-advice">Advice</section>
-	</section>
-	<section id="teddy-day-content" class="day-content">
-		<h2>teddy Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="teddy-day-content-advice">Advice</section>
-	</section>
-	<section id="promise-day-content" class="day-content">
-		<h2>promise Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="promise-day-content-advice">Advice</section>
-	</section>
-	<section id="hug-day-content" class="day-content">
-		<h2>hug Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="hug-day-content-advice">Advice</section>
-	</section>
-	<section id="kiss-day-content" class="day-content">
-		<h2>kiss Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="kiss-day-content-advice">Advice</section>
-	</section>
-	<section id="valentine-day-content" class="day-content">
-		<h2>valentine Day</h2>
-		<button class = "back-main-menu">Back to Main Menu</button>
-                <section id="valentine-day-content-advice">Advice</section>
-	</section>
-	<section id="submit-story">
-		<h2>Submit your own Story</h2>
-		<button id = "submitStory-to-mainMenu">Back to Main Menu</button>
-                <section>
-		    <input type="text" name="name" id="submit-story-name" placeholder="Your Name/Alias" />
-		    <br />
-		    <select id="submit-story-category" name="category">
-			<option value="1">Rose Day</option>
-			<option value="2">Propose Day</option>
-			<option value="3">Chocolate Day</option>
-			<option value="4">Teddy Day</option>
-			<option value="5">Promise Day</option>
-			<option value="6">Hug Day</option>
-			<option value="7">Kiss Day</option>
-			<option value="8" selected>Valentine's Day</option>
-			<option value="9">Other</option>
-		    </select>
-		    <textarea name="story" id="submit-story-story" rows="5" maxlength="300" placeholder="Share your Story here!" wrap="soft"></textarea>
-		    <button id="submit-story-submit">Submit</button>
+	<div id="cover-body">
+	    <section id="cover-body-logo"><img src="./images/logo.png" /></section>
+	    <img src="./images/title.png" id="cover-body-title" />
+	    <br /><br />
+	    <img src="./images/tagline.png" id="cover-body-tagline" />
+	    <br />
+	    <section id="cover-footer">
+		<a href="http://www.facebook.com/BitsFirefox" target="_blank"><img src="./images/fb.jpg" id="cover-fb" /></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="mailto:nilaybinjola@gmail.com"><img src="./images/email.jpg" id="cover-email" /></a>
+	    </section>
+	</div>
+	
+	<div id="day-body">
+	    <section id="day-description">
+		<section id="rose-day-description" class="day-description">
+		    <img src="./images/rose.jpg" align="left" class="day-description-image" />Rose Day Description.
 		</section>
-	</section>
+		<section id="propose-day-description" class="day-description">
+		    Propose Day Description. <img src="./images/propose.jpg" align="right" class="day-description-image" />
+		</section>
+		<section id="chocolate-day-description" class="day-description">
+		    <img src="./images/chocolate.jpg" align="left" class="day-description-image" /> Chocolate Day Description.
+		</section>
+		<section id="teddy-day-description" class="day-description">
+		    Teddy Day Description. <img src="./images/teddy.jpg" align="right" class="day-description-image" />
+		</section>
+		<section id="promise-day-description" class="day-description">
+		    <img src="./images/promise.jpg" align="left" class="day-description-image" /> Promise Day Description.
+		</section>
+		<section id="hug-day-description" class="day-description">
+		    Hug Day Description. <img src="./images/hug.jpg" align="right" class="day-description-image" />
+		</section>
+		<section id="kiss-day-description" class="day-description">
+		    <img src="./images/kiss.jpg" align="left" class="day-description-image" /> Kiss Day Description.
+		</section>
+		<section id="valentine-day-description" class="day-description">
+		    Valentine's Day Description. <img src="./images/valentine.jpg" align="right" class="day-description-image" />
+		</section>
+	    </section>
+	    
+	    <div class="clear-div"></div>
+	    
+	    <hr />
+	    
+	    <section id="day-advice-body">
+		<section id="notification">
+		    <section id="ajax-loading">
+			<img src="./images/ajaxload.gif" />
+		    </section>
+		    <section id="success">
+			<img src="./images/success.png" />
+			<br />
+			Your submission was completed successfully.
+			<br />
+			<button id="success-back-button">Back</button>
+		    </section>
+		    <section id="submit-message">
+			Submitting your Advice... With love.
+		    </section>
+		    <section id="fetch-message">
+			Fetching Advice just for you...
+		    </section>
+		    <section id="like-message">
+			Lovely that you liked this Advice...
+		    </section>
+		</section>
+		<section id="day-advice-refresh">
+		    <img src="./images/refresh-button.svg" id="main-refresh-button"/>
+		</section>
+		<section id="day-advice-header">
+		    <section id="day-advice-author">
+			By: <span id="day-advice-author-name"></span>
+		    </section>
+		    <section id="day-advice-interaction">
+			<img src="./images/refresh-icon.png" id="refresh-advice" />&nbsp;&nbsp;&nbsp;<img src="./images/love-icon.png" id="like-advice" />
+		    </section>
+		    <div class="clear-div"></div>
+		</section>
+		<section id="day-advice">
+		</section>
+	    </section>
+	    
+	    <section id="submit-advice-form">
+		<div id="advice-submit-form-title">Submit your Advice for this Day!</div>
+		<br />
+		<input type="text" id="adviser-name" placeholder="Your alias" />&nbsp;&nbsp;
+		<input type="checkbox" id="adviser-anonymous" value="Anonymous" />As Anonymous
+		<br /><br />
+		<textarea id="advice" cols="35" rows="7" placeholder="Write your advice here..."></textarea>
+	    </section>
+	</div>
     </div>
     
-    <footer>
-        <section></section>
-        <section id="contact">
-            <a href="http://www.facebook.com/" target="_blank"><button id="facebook-button">Facebook</button></a>
-            <button id="developer-email">Email</button>
-        </section>
+    <footer id="footer">
+	<span id="request-share-button">Share your Advice!</span>
+	<span id="advice-submit-button">Submit your Advice!</span>
     </footer>
     
-    <script src="./showDayContent.js"></script>
-    <script src="./submitStory.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./adviceInteraction.js"></script>
+    <script src="./submitAdvice.js"></script>
 </body>
 </html>

@@ -1,60 +1,265 @@
 a
 {
     text-decoration: none;
+    border: 0px;
 }
 
-#notification-overlay
+header
 {
-    position: absolute;
+    width: 100%;
+    display: inline;
+    padding-top: 8px;
+}
+
+hr
+{
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+pre
+{
+    font-family: fantasy;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+footer
+{
+    display: none;
+    position: fixed;
     bottom: 0px;
-    top: 0px;
     left: 0px;
     right: 0px;
-    opacity: 0.85;
-    background-color: #000000;
+    background: #383838;
+    color: #FFFFFF;
+    text-align: center;
+    border-top: 1px #000000 solid;
+}
+
+#prev-page
+{
+    display: inline-block;
+    visibility: hidden;
+    float: left;
+    width: 20%;
+}
+
+.page-heading
+{
     display: none;
+    width: 60%;
+    line-height: 54px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 29px;
+}
+
+#next-page
+{
+    float: right;
+    text-align: right;
+    width: 20%;
+}
+
+#main-body
+{
+    display: inline;
+    height: 100%;
+}
+
+#cover-body
+{
+    text-align: center;
+}
+
+#cover-body-logo
+{
+    margin-top: 15%;
+}
+
+#cover-body-title
+{
+    width: 60%;
+}
+
+#cover-body-tagline
+{
+    width: 70%;
+}
+
+#cover-footer
+{
+    display: inline;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+#day-body
+{
+    display: none;
+    width: 100%;
+}
+
+.day-description
+{
+    display: none;
+    width: auto;
+}
+
+.day-description-image
+{
+    padding: 5px;
+}
+
+#day-advice-body
+{
+    margin-top: 5px;
 }
 
 #notification
 {
-    position: absolute;
-    bottom: 0px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    display: none;
+    display: inline;
+    text-align: center;
 }
 
-#ajax-loader
+#ajax-loading
 {
+    margin-top: 25%;
     display: none;
-    margin-top: 50%;
-}
-
-#submit-story-progress-message
-{
-    display: none;
-    color: #FFFFFF;
 }
 
 #success
 {
     display: none;
-    margin-top: 40%;
 }
 
-#submit-story-success-message
+#submit-message
 {
-    display: none;
-    color: #FFFFFF;
 }
 
-.day-content
+#fetch-message
 {
     display: none;
 }
 
-#submit-story
+#like-message
 {
-    display:none;
+    display: none;
+}
+
+#success-back-button
+{
+    box-shadow: inset 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 10px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+#day-advice-refresh
+{
+    margin-top: 25%;
+    text-align: center;
+    display: none;
+}
+
+#main-refresh-button
+{
+    width: 30%;
+    height: 5%;
+}
+
+#day-advice-header
+{
+    width: 100%;
+    margin-top: 7px;
+    display: inline;
+}
+
+#day-advice-author
+{
+    display: inline-block;
+    float: left;
+    line-height: 32px;
+}
+
+#day-advice-interaction
+{
+    display: inline-block;
+    float: right;
+}
+
+#day-advice
+{
+    padding: 5px;;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px 10px 10px 10px;
+    background: rgba(255,0,0,0.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+
+#submit-advice-form
+{
+    display: none;
+    margin-bottom: 50px;
+}
+
+#advice-submit-form-title
+{
+    text-align: center;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#request-share-button
+{
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #fe1a00;
+    border-radius: 10px;
+    border: 1px solid #d83526;
+    display: inline-block;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    margin: 5px;
+}
+
+#advice-submit-button
+{
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    background-color: #89c403;
+    border-radius: 10px;
+    border: 1px solid #74b807;
+    display: none;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+    margin: 5px;
+}
+
+.clear-div
+{
+    clear: both;
 }
